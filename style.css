@@ -7,12 +7,17 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .hero-image{
     width: 100vw;
     height: 100vh;
-    background-image:  url("img/bcg.jpg");
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),  url("img/bcg.jpg");
     background-size: cover;
     padding-top: 1%;
+    
 
 }
 
@@ -112,3 +117,324 @@
     bottom: 5%;
 
 }
+
+.main-text .btn-design:hover a{
+
+opacity: 0.6;
+top: 0;
+}
+
+.whatsapp-icon{
+    z-index: 999;
+}
+
+/* !Öne Çıkanlar CSS */
+
+.product{
+    width: 100vw;
+    padding: 7%;
+    background-color: #E5E4CA;
+}
+
+.product h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #3E4B39;
+    
+}
+
+.product-items{
+
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+
+.resim{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: solid 2px #3E4B39;
+    transition: .5s all;
+}
+
+.product .item .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    top: -100%;
+    left: 0;
+    border-radius: 30px;
+    background-color: black;
+    transition: 0.5s all;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.product .item:hover .overlay{
+    opacity: 0.6;
+    top: 0;
+    
+}
+
+.product .item:hover .resim{
+    transform: scale(1.2);
+}
+
+.ürünlerimiz-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.ürünlerimiz-btn a{
+    padding: 10px;
+    border: 2px solid #3E4B39;
+    border-radius: 30px;
+
+    color: #3E4B39;
+}
+
+.ürünlerimiz-btn a:hover{
+    color: #E5E4CA;
+    background-color: #3E4B39;
+}
+
+/* ! Blog Section */
+
+.section-blog{
+    padding: 7%;
+    background-color: #3E4B39;
+}
+
+.section-blog h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #E5E4CA;
+}
+
+.section-blog-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.blog-product .box{
+    width: 100%;
+    height: 30%;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    background-color: #E5E4CA;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-product .box a{
+    color: #3E4B39;
+}
+
+.blog-product:hover .resim{
+    margin-top: -100px;
+}
+
+.blog-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-btn a{
+    padding: 10px;
+    border: 2px solid #E5E4CA;
+    border-radius: 30px;
+    color: #E5E4CA;
+    transition: 0.3s all ease-in;
+}
+
+.blog-btn a:hover{
+    color: #3E4B39;
+    background-color: #E5E4CA;
+}
+
+
+/* ! Footer Section */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E5E4CA;
+    padding: 30px 5%;
+
+}
+
+footer .box{
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #3E4B39;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+footer p{
+    color: #3E4B39;
+}
+
+footer .footer-list li a{
+    color: #3E4B39;
+
+}
+
+footer .center img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+footer input{
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 30px;
+    border: 2px solid #3E4B39;
+    color: #3E4B39;
+    margin-bottom: 10px;
+
+}
+
+input::placeholder{
+    color: #3E4B39;
+}
+
+footer input:focus{
+    outline: 0;
+}
+
+.social-media{  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media .facebook,
+.social-media .instagram,
+.social-media .youtube{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #3E4B39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+
+.social-media a{
+    color: white;
+}
+
+.social-media .facebook:hover{
+    background-color: blue;
+}
+.social-media .instagram:hover{
+    background-color: purple;
+}
+.social-media .youtube:hover{
+    background-color: red;
+}
+.social-media i{
+    transition: 0.5s all ease-in;
+}
+
+.social-media i:hover{
+transform: scale(1.2) rotate(360deg);
+
+}
+
+.designer{
+    text-align: center;
+    background-color: #3E4B39;
+    padding: 1%;
+    color: #E5E4CA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

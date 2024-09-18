@@ -1,66 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- !Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- !Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <!-- !External CSS-2 -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- !External CSS-1 -->
+        <link rel="stylesheet" href="responsive.css">
+
+    </head>
+    <body>
+
+        <div class="hero-image">
+            <nav>
+                <div class="logo-image-wrapper">
+                    <img width="65px" src="img/logo.jpg" alt>
+                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    &#9776;
+                </label>
+                <ul class="nav-list">
+                    <li><a href="#">Anasayfa</a>
+                        <li><a href="#">Hakkımızda</a>
+                            <li><a href="#">Menü</a>
+                                <li><a href="./blog.html">Blog</a>
+                                    <li><a href="#">İletişim</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="main-text">
+                                <h1>Coffe Point</h1>
+                                <h3>Keyifli Vakit Geçirmek İsteyenlerin Buluşma
+                                    Noktası</h3>
+                                <button class="btn-design">
+                                    <a href="#">Menü</a>
+                                </button>
+                            </div>
+                            <div class="whatsapp-icon">
+                                <a href="https://www.whatsapp.com/"
+                                    target="_blank">
+                                    <i style="color: white;"
+                                        class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ! Öne Çıkanlar Bölümü Başlıyor -->
+
+                        <div class="product">
+                            <h3>Öne Çıkan Ürünlerimiz</h3>
+                            <div class="product-items">
+                                <div class="item item1">
+                                    <img width="70px" class="resim"
+                                        src="img/kahve.jpg" alt>
+                                    <div class="overlay">
+                                        <h4>Damla Sakizli Turk Kahvesi</h4>
+                                        <p>Fiyat : 90₺</p>
+                                    </div>
+                                </div>
+                                <div class="item item2">
+                                    <img width="70px" class="resim"
+                                        src="img/waffle.jpg" alt>
+                                    <div class="overlay">
+                                        <h4>Çilek Ve Muzlu Waffle</h4>
+                                        <p>Fiyat : 190₺</p>
+                                    </div>
+                                </div>
+                                <div class="item item3">
+                                    <img width="70px" class="resim"
+                                        src="img/pasta.jpg" alt>
+                                    <div class="overlay">
+                                        <h4>Frambuazlı Pasta</h4>
+                                        <p>Fiyat : 120₺</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ürünlerimiz-btn">
+                                <a href="#">Tümünü Gör</a>
+                            </div>
+                        </div>
+
+                        <!-- ! Blog Section Başlangıç -->
+                        <div class="section-blog">
+                            <h3>Blog</h3>
+                            <div class="section-blog-items">
+
+                                <div class="item blog-product">
+                                    <img class="resim" src="img/blog1.jpg" alt>
+                                    <div class="box">
+                                        <p>Türk Kahvesi İle İlgili 5 Kitap</p>
+                                        <a href="#">Tamamını okumak için tıklayınız.</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="item blog-product">
+                                    <img class="resim" src="img/blog3.jpg" alt>
+                                    <div class="box">
+                                        <p>Türk Kahvesinin Sağlık Üzerinde Etkileri</p>
+                                        <a href="#">Tamamını okumak için tıklayınız.</a>
+                                    </div>
+                                </div>
+                                <div class="item blog-product">
+                                    <img class="resim" src="img/blog2.jpg" alt>
+                                    <div class="box">
+                                        <p>Bol Köpüklü Türk Kahvesinin Sırları</p>
+                                        <a href="#">Tamamını okumak için tıklayınız.</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="blog-btn">
+                                <a href="#">Tümünü Gör</a>
+                                
+                            </div>
+                        </div>
+                    <!-- ! Footer Section -->
+                    <footer>
+                        <div class="box left">
+                            <h3>Kurumsal</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Anasayfa</a></li>
+                                <li><a href="#">Hakkımızda</a></li>
+                                <li><a href="#">iletişim</a></li>
+                                <li><a href="#">Menü</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Ekibimiz</a></li>
+                                <li><a href="#">Misyonumuz</a></li>
+                                <li><a href="#">Vizyonumuz</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="box center">
+                            <a href="">
+                                <img width="80px" src="img/logo.jpg" alt="">
+                            </a>
+                            <h3>YENİLİKLERDEN HABERDAR OLUN</h3>
+                            <form action="mailto:coffeepoint@gmail.com" method="POST">
+                                <input type="email" placeholder="Email giriniz...">
+                            </form>
+                            <div class="social-media">
+                                <div class="facebook">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="instagram">
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="youtube">
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box right">
+                            <h3>İLETİŞİM</h3>
+                            <p>Mavişehir, 2040. Sk. No:104, 35540 Karşıyaka/İzmir <br>
+                                Sakarya, Kıbrıs Şehitleri Cd. No:46, 17200 Biga/Çanakkale <br>
+                                +(90) 517 117 17 17 <br>
+                                +(90) 517 118 18 18 <br>
+                                coffeepoint@gmail.com <br>
+                                info@coffeepoint.com <br>
+                            </p>
+                        </div>
+                    </footer>
+
+                    <div class="designer">
+                        <p>Created By KodKoloni  All Rigths Reserver</p>
+                    </div>
 
 
-    <!-- !Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- !Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- !External CSS-1 -->
-    <link rel="stylesheet" href="./responsive.css">
-
-    <!-- !External CSS-2 -->
-     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-<div class="hero-image">
-    <nav>
-        <div class="logo-image-wrapper">
-            <img width="65px" src="img/logo.jpg" alt="">
-        </div>
-        <input type="checkbox" id="menu-toogle" class="menu-toogle">
-        <label for="menu-toggle" class="menu-icon">
-            &#9776;
-        </label>
-        <ul class="nav-list">
-            <li><a href="#">Anasayfa</a>
-            <li><a href="#">Hakkımızda</a>
-            <li><a href="#">Menü</a>
-            <li><a href="#">Blog</a>
-            <li><a href="#">İletişim</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="main-text">
-        <h1>Coffe Point</h1>
-        <h3>Keyifli Vakit Geçirmek İsteyenlerin Buluşma Noktası</h3>
-        <button class="btn-design">
-            <a href="#">Menü</a>
-        </button>
-    </div>
-    <div class="whatsapp-icon">
-        <a href="https://www.whatsapp.com/" target="_blank">
-            <i style="color: white;" class="fa-brands fa-whatsapp"></i>
-        </a>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+                    </body>
+                </html>
