@@ -155,6 +155,7 @@ top: 0;
 
     padding: 3%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -264,6 +265,7 @@ top: 0;
 
 .blog-product .box a{
     color: #3E4B39;
+    text-align: center;
 }
 
 .blog-product:hover .resim{
@@ -293,6 +295,7 @@ top: 0;
 
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #E5E4CA;
@@ -447,6 +450,7 @@ transform: scale(1.2) rotate(360deg);
 
 .hakkimizda .tüm-üyeler{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 
@@ -474,7 +478,7 @@ transform: scale(1.2) rotate(360deg);
 }
 
 .section-blog-wrapper{
-    padding-inline: 20%;
+    padding-inline: 10%;
 }
 
 
@@ -558,11 +562,14 @@ text-align: center;
     width: 100%;
     padding:120px 7%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .bize-ulasin .ulasim{
-    width: 25%;
+    /* width: 25%; */
     text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
 .bize-ulasin .ulasim i{
     font-size: 50px;
@@ -576,6 +583,169 @@ text-align: center;
 .bize-ulasin .ulasim p{
     color: #E5E4CA;
 }
+
+
+/* ! Menu Bölümü */
+
+.menu{
+    width: 100%;
+    background-color: #3E4B39;
+    overflow-x: hidden;
+}
+
+
+.slider{
+    animation: 20s slide infinite;
+    padding-top: 100px;
+}
+
+.slider-content{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.slider-content img{
+    width: 500px;
+    height: 300px;
+    border: 1px solid white;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0px);
+    }
+    12%{
+        transform: translateX(-510px);
+    }
+    24%{
+        transform: translateX(-1020px);
+    }
+    36%{
+        transform: translateX(-1530px);
+    }
+    48%{
+        transform: translateX(-1020px);
+    }
+    60%{
+        transform: translateX(-510px);
+    }
+    72%{
+        transform: translateX(-0px);
+    }
+}
+
+/* ! Menu Katalog Bölümü */
+
+.menu-section{
+    position: relative;
+    width: 70%;
+    height: 1000px;
+    background-image: url("img/menu-arkaplan.jpeg");
+    background-size: 93% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    border: 5px groove #E5E4CA;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.menu-logo{
+    width: 50;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+.menu-section h3{
+    color: #E5E4CA;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.urun{
+    display: flex;
+    justify-content: center;
+    padding-inline: 1%;
+    margin-bottom: 50px;
+    
+}
+
+.urun h4{
+    color: #E5E4CA;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-bottom: 2px solid #E5E4CA;
+}
+
+.urun ul li{
+    color: #E5E4CA;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.urun .icecek-left, .urun .tatli-right{
+    width: 50%;
+    padding-inline: 5%;
+    padding-top: 2%;
+}
+
+.ayrac{
+    height: 600px;
+    border: 2px solid #E5E4CA;
+    
+}
+
+.menu-section .yazi{
+    width: 100%;
+    text-align: center;
+    color: #E5E4CA;
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+}
+
+.menu-section .menu-btn{
+    background-color: #E5E4CA;
+    border: none;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.menu-section .menu-btn a{
+    color: #3E4B39;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
